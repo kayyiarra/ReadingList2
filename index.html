@@ -1737,7 +1737,7 @@
           render();
           renderAllStories();
         });
-        main.appendChild(readToggle);
+        if (item.isRead) main.appendChild(readToggle);
 
         row.append(number, main);
 
