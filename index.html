@@ -1238,7 +1238,7 @@
           .slice(0, DAILY_COUNT);
 
         state.todayIds = state.todayIds.filter(id => !state.read.includes(id));
-        const targetCount = Math.min(DAILY_COUNT, allStories.length - state.read.length);
+        const targetCount = Math.min(DAILY_COUNT, allStories.length);
         const needed = Math.max(0, targetCount - state.todayIds.length);
 
         if (needed > 0) {
